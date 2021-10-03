@@ -1,0 +1,17 @@
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.users_list {
+    margin-top: 10px;
+}
+
+span {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.friends_button {
+    margin-bottom: 5px;
+}

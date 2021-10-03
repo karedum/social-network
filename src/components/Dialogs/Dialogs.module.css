@@ -1,0 +1,84 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItem {
+    padding: 10px;
+    color: white;
+}
+
+
+.dialogsItem .active {
+    color: red;
+}
+
+.dialog {
+
+}
+
+.messages {
+    padding: 10px;
+}
+
+.messages .message {
+    color: white;
+}
+
+.dialog_img {
+    width: 30px;
+}
+
+.chat__header {
+    text-align: center;
+}
+
+.chat__item {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.chat__person_avatar {
+    border-radius: 50%;
+}
+
+.chat__messages {
+    margin-left: 10px;
+
+}
+
+.chat__message {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.chat__message_content {
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #ccc;
+    display: inline-block;
+
+    margin-left: 5px;
+}
+
+.chat__item_responder {
+    flex-direction: row-reverse;
+}
+
+.chat__item_responder .chat__message {
+    flex-direction: row-reverse;
+}
+
+
+.chat__item_responder .chat__message-content {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}

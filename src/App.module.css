@@ -1,0 +1,21 @@
+.app_wrapper {
+    display: grid;
+    grid-template-areas: "h h" "n c" "b b";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    margin: 0;
+    height: 100vh;
+    /* grid-gap: 10px; */
+}
+
+.app_wrapper_content {
+    grid-area: c;
+    background-color: #fefefe;
+    padding: 25px;
+
+}
+
+
+
+
+

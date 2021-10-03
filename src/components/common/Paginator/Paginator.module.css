@@ -1,0 +1,17 @@
+
+.currentPage {
+    font-weight: bold;
+}
+
+.paginator {
+    border: 2px solid #31435b;
+    border-right: none;
+}
+
+.next_button {
+    margin-left: 5px;
+}
+
+.prev_button {
+    margin-right: 5px;
+}
