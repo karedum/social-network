@@ -1,0 +1,42 @@
+.header {
+    display: grid;
+    grid-area: h;
+    padding: 0px 20px;
+    align-items: center;
+    grid-template-columns: 9fr 3fr;
+    background-color: #31435b;
+    min-height: 50px;
+}
+
+.header img {
+    width: 132px;
+    height: 22px;
+}
+
+.auth_data {
+    color: #fff;
+}
+
+Button {
+    height: 30px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .header {
+        grid-template-columns: 4fr 4fr;
+    }
+}
+

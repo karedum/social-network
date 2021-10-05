@@ -28,7 +28,7 @@ const Message: React.FC<PropsType> = ({messagesPage, userId}) => {
     return (<div className={style.chat__content}>
             {
                 messagesPage.messages.map((mes: any) => {
-                        debugger
+
                         if (mes.id === myProfile?.userId) {
 
                             return <div key={mes.id} className={style.chat__item}>

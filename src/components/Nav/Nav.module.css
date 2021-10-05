@@ -1,14 +1,16 @@
 .nav {
-    grid-area: n;
-    clear: both;
-    background: #f1f2f7;
-  }
+  grid-area: n;
+  clear: both;
+  background: #f1f2f7;
+}
 
-  .item a {
-    color: white;
-    text-decoration: none;
-  }
+.item a {
+  color: white;
+  text-decoration: none;
+}
 
-  .item a.active {
-    color: gold;
-  }
+.item a.active {
+  color: gold;
+}
+
+/*# sourceMappingURL=Nav.module.css.map */

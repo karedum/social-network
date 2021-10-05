@@ -10,7 +10,7 @@ type Propstype = {
 }
 const DialogItem: React.FC<Propstype> = (props) => {
     let path = "/dialogs/" + props.id;
-    debugger
+
     return (
         <List >
             <ListItem alignItems="flex-start">

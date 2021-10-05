@@ -4,10 +4,10 @@ import {Redirect, Route, Switch, withRouter} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
-import NavContainer from "./components/Nav/NavContainer";
+import Nav from "./components/Nav/Nav";
 import {UserPage} from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
-import HeaderContainer from "./components/Header/HeaderContainer";
+import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import {connect} from "react-redux";
 import {compose} from "redux";
@@ -30,7 +30,7 @@ const SuspendedChatPage = withSuspense(ChatPage)
 class App extends React.Component<MapPropsType & DispatchPropsType> {
 
     componentDidMount() {
-        this.props.initializedApp();
+        this.props.initializedApp()
     }
 
     render() {
@@ -40,9 +40,9 @@ class App extends React.Component<MapPropsType & DispatchPropsType> {
         return (
 
             <div className={style.app_wrapper}>
-                <HeaderContainer/>
+                <Header/>
 
-                <NavContainer />
+                <Nav />
                 <div className={style.app_wrapper_content}>
                     <Switch>
                         <Route path="/dialogs/:userId?" render={() => <Dialogs />}/>

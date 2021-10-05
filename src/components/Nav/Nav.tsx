@@ -4,13 +4,16 @@ import {friendsType} from '../../Redux/sidebarPageReduce';
 import { MenuItem, MenuList} from "@material-ui/core";
 import style from "./Nav.module.css"
 import { Link } from 'react-router-dom';
+import {useSelector} from "react-redux";
+import {appStateType} from "../../Redux/redux-store";
 
 type Propstype = {
-    friends: Array<friendsType>
+
 }
 
 
-const Nav: React.FC<Propstype> = ({friends}) => {
+const Nav: React.FC<Propstype> = () => {
+    const friends = useSelector((state: appStateType) => state.sidebar.friends)
     let sideBar = friends
         .map((friend) => <Friends key={friend.id} name={friend.name} img={friend.img} id={friend.id}/>);
     return (

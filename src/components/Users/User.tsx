@@ -15,7 +15,7 @@ type UserType = {
 const User: React.FC<UserType> = ({user, followingProgress, follow, unfollow}) => {
     return <div>
         <NavLink to={'/profile/' + user.id}>
-            <img className={style.image} src={user.photos.small != null ? user.photos.small : usersImage}/>
+            <img className={style.user_image} src={user.photos.small != null ? user.photos.small : usersImage}/>
         </NavLink>
         <div className={style.friends_button}>
             {user.followed

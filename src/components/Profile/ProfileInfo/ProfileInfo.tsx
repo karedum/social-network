@@ -44,7 +44,7 @@ const ProfileInfo: React.FC<PropsType> = (props) => {
 
     return (
         <div>
-            <img src={props.profile.photos.large || usersImage} className={s.mainPhoto} style={{width: 200}}/>
+            <img src={props.profile.photos.large || usersImage} className={s.mainPhoto} />
             {props.isOwner && <div className={style.buttons}>
                 <Button
                     variant="contained"

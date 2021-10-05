@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import Paginator from "../common/Paginator/Paginator";
 import User from "./User";
 import style from "./Users.module.css";
-
 import {UsersSearchForm} from "./UsersSearchForm";
 import {FilterType, follow, getUsers, unfollow} from "../../Redux/UserReducer";
 import {useDispatch, useSelector} from "react-redux";

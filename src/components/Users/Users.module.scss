@@ -1,0 +1,36 @@
+.user_image {
+    width: 100px;
+    height: 100px;
+}
+
+.users_list {
+    margin-top: 10px;
+}
+
+span {
+    padding: 3px;
+    cursor: pointer;
+}
+
+.friends_button {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        grid-template-columns: 8fr 4fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        grid-template-columns: 6fr 6fr;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .header {
+        grid-template-columns: 4fr 4fr;
+    }
+}

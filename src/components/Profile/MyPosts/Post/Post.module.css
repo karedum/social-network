@@ -1,15 +1,14 @@
-
-
 .item {
   color: green;
   display: flex;
   align-items: center;
   margin-top: 5px;
-}  
-
+}
 .item img {
   width: 70px;
   height: 70px;
   border-radius: 30px;
   margin-right: 10px;
 }
+
+/*# sourceMappingURL=Post.module.css.map */
